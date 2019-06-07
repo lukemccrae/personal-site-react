@@ -8,7 +8,40 @@
   pointer-events: none;
 }
 
-.App-header {
+.App-splash {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-about {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-projects {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-contact {
   background-color: #282c34;
   min-height: 100vh;
   display: flex;
@@ -21,6 +54,19 @@
 
 .App-link {
   color: #61dafb;
+}
+
+.nav {
+  display: flex;
+  flex-direction: column;
+  top: 0;
+  position: fixed;
+  width: 100%;
+  background-color: #282c34;
+}
+
+#basic-nav-dropdown {
+  color: white;
 }
 
 @keyframes App-logo-spin {
