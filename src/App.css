@@ -8,6 +8,10 @@
   pointer-events: none;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .App-splash {
   background-color: #282c34;
   min-height: 100vh;
@@ -63,6 +67,10 @@
   position: fixed;
   width: 100%;
   background-color: #282c34;
+}
+
+.nav button {
+  padding: 0;
 }
 
 #basic-nav-dropdown {

@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import './App.css';
+import Button from 'react-bootstrap/Button';
 
 class About extends Component {
   constructor(props) {
@@ -12,7 +13,7 @@ class About extends Component {
     return (
       <div className="App">
         <div className="App-about">
-          About
+          <Button onClick={() => this.props.scrollTo('projects')}>Learn More</Button>
         </div>
       </div>
     )

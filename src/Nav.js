@@ -1,21 +1,29 @@
 import React, {Component} from 'react';
 import './App.css';
 import Navbar from 'react-bootstrap/Navbar';
-import Button from 'react-bootstrap/Button';
-import Container from 'react-bootstrap/Container';
-import Row from 'react-bootstrap/Row';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 
 
 class Nav extends Component {
-  render() {
+  constructor(props) {
+    super(props)
+
+    this.state = {}
+  }
+  render(props) {
     return (
       <div className="nav">
         <Navbar>
           <NavDropdown className="nav-button" title="More" id="basic-nav-dropdown">
-            <NavDropdown.Item>About</NavDropdown.Item>
-            <NavDropdown.Item>Projects</NavDropdown.Item>
-            <NavDropdown.Item>Contact</NavDropdown.Item>
+            <NavDropdown.Item>
+              <button onClick={() => this.props.scrollTo('about')}>About</button>
+            </NavDropdown.Item>
+            <NavDropdown.Item>
+              <button onClick={() => this.props.scrollTo('projects')}>Projects</button>
+            </NavDropdown.Item>
+            <NavDropdown.Item>
+              <button onClick={() => this.props.scrollTo('contact')}>Contact</button>
+            </NavDropdown.Item>
           </NavDropdown>
         </Navbar>
       </div>
