@@ -1,6 +1,5 @@
 import React, {Component} from 'react';
 import './App.css';
-import Nav from './Nav.js';
 import Splash from './Splash.js';
 import About from './About.js';
 import Projects from './Projects.js';

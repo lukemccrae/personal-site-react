@@ -13,7 +13,10 @@ class About extends Component {
     return (
       <div className="App">
         <div className="App-about">
-          <Button onClick={() => this.props.scrollTo('projects')}>Learn More</Button>
+          <div>
+            <Button className="nav-button" onClick={() => this.props.scrollTo('projects')}>Projects</Button>
+            <Button className="nav-button" onClick={() => this.props.openModal}>Resume</Button>
+          </div>
         </div>
       </div>
     )

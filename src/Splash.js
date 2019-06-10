@@ -15,7 +15,7 @@ class Splash extends Component {
         <div className="App-splash">
           <h3>Luke McCrae</h3>
           <h5>Full Stack Developer</h5>
-          <Button onClick={() => this.props.scrollTo('about')}>Learn More</Button>
+          <Button className="nav-button" onClick={() => this.props.scrollTo('about')}>Learn More</Button>
         </div>
       </div>
     )
