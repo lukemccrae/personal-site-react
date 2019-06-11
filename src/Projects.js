@@ -4,7 +4,6 @@ import Button from 'react-bootstrap/Button';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import Image from 'react-bootstrap/Image';
 import styled from 'styled-components';
 
 
@@ -17,17 +16,20 @@ class Projects extends Component {
         {
           name: 'Beer Crawl',
           img: 'https://picsum.photos/id/281/270/117',
-          description: "An app to help you explore your urban environment. After getting your location, a dynamically generated beer crawl is generated along with a link to the directions in your maps application."
+          description: "An app to help you explore your urban environment. After getting your location, a dynamically generated beer crawl is generated along with a link to the directions in your maps application.",
+          id: 1
         },
         {
           name: 'Group Timer',
           img: 'https://picsum.photos/id/281/270/117',
-          description: 'Conquer your todo list with the help of sequential timers.'
+          description: 'Conquer your todo list with the help of sequential timers.',
+          id: 2
         },
         {
           name: 'Simple Todo',
           img: 'https://picsum.photos/id/281/270/117',
-          description: 'Stay orgainzed with this simple todo list.'
+          description: 'Stay orgainzed with this simple todo list.',
+          id: 3
         }
       ]
     }
@@ -47,10 +49,6 @@ class Projects extends Component {
     justify-content: center;
     `
 
-    const Description = styled.div`
-    display: flex;
-    `
-
     return (
       <div className="App">
         <div className="App-projects">
@@ -58,7 +56,7 @@ class Projects extends Component {
             <Row className="project">
                 {this.state.projects.map(p => {
                   return (
-                    <Col>
+                    <Col key={p.id}>
                       <Projects>
                         <h3>{p.name}</h3>
                       </Projects>
