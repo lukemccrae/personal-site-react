@@ -113,8 +113,22 @@ html {
   margin-top: 10%;
 }
 
+.ReactModal__Body--open {
+  overflow-y: hidden;
+}
+
 .contact-form {
   margin-top: 4em;
+}
+
+.project-name-row {
+  padding: 0 15px 0 15px;
+  justify-content: space-between;
+}
+
+.icon-row a {
+  padding: 0 12px 0 12px;
+  font-size: 30px;
 }
 
 .nav button {
