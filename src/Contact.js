@@ -91,7 +91,7 @@ class Contact extends Component {
                     <Form.Control value={this.state.message} onChange={this.onMessageChange} ref="message" id="message" type="text" placeholder="Message" as="textarea" rows="7"/>
                   </Form.Group>
 
-                  <Button variant="primary" type="submit">
+                  <Button className="nav-button" variant="primary" type="submit">
                     Submit
                   </Button>
                 </Form>

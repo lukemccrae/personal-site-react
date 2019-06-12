@@ -107,12 +107,11 @@ class Projects extends Component {
         <div className="App-projects">
           <Container>
             <Row>
-
                 {projects.map(p => {
                   return (
-                    <Col className="project">
+                    <Col key={p.id} className="project">
                       <h3>{p.name}</h3>
-                      <Projects onClick={() => this.openProject(p)} key={p.id} src={p.img}></Projects>
+                      <Projects onClick={() => this.openProject(p)} src={p.img}></Projects>
                     </Col>
                   )
                 })}
