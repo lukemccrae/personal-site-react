@@ -2,6 +2,8 @@ import React, {Component} from 'react';
 import './App.css';
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
+import Row from 'react-bootstrap/Row';
+import Container from 'react-bootstrap/Container';
 
 class Contact extends Component {
   constructor(props) {
@@ -71,24 +73,29 @@ class Contact extends Component {
     return (
       <div className="App">
         <div className="App-contact">
-          <h3>Contact me</h3>
-          <Form onSubmit={e => this.handleSubmit(e)}>
-            <Form.Group id="name">
-              <Form.Control value={this.state.name} onChange={this.onNameChange} ref="name" type="text" placeholder="Name"/>
-            </Form.Group>
+          <Container>
+            <h3>Contact me</h3>
+            <div className="contact-form">
+              <Form onSubmit={e => this.handleSubmit(e)}>
+                <Form.Group id="name">
+                  <Form.Control value={this.state.name} onChange={this.onNameChange} ref="name" type="text" placeholder="Name"/>
+                </Form.Group>
 
-            <Form.Group>
-              <Form.Control value={this.state.email} onChange={this.onEmailChange} ref="email" id="emaiil" type="email" placeholder="Email"/>
-            </Form.Group>
-            <Form.Group>
-              <Form.Control value={this.state.message} onChange={this.onMessageChange} ref="message" id="message" type="text" placeholder="Message" as="textarea" rows="7"/>
-            </Form.Group>
+                <Form.Group>
+                  <Form.Control value={this.state.email} onChange={this.onEmailChange} ref="email" id="emaiil" type="email" placeholder="Email"/>
+                </Form.Group>
+                <Form.Group>
+                  <Form.Control value={this.state.message} onChange={this.onMessageChange} ref="message" id="message" type="text" placeholder="Message" as="textarea" rows="7"/>
+                </Form.Group>
 
-            <Button variant="primary" type="submit">
-              Submit
-            </Button>
-          </Form>
+                <Button variant="primary" type="submit">
+                  Submit
+                </Button>
 
+              </Form>
+            </div>
+          </Container>
+          <p className="copyright">Luke McCrae ©2019</p>
         </div>
       </div>
     )
