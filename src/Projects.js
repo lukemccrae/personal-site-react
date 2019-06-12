@@ -38,31 +38,29 @@ class Projects extends Component {
 
 
   render() {
-    const Projects = styled.div`
+    const Projects = styled.img`
     border-width: 2px;
     border-style: solid;
     border-radius: 5px;
     border-color: grey;
     min-height: 65px;
-    display: flex;
     align-items: center;
     justify-content: center;
+    margin: 10px;
     `
 
     return (
       <div className="App">
         <div className="App-projects">
           <Container>
-            <Row className="project">
+            <Row>
+              <Col className="project">
                 {this.state.projects.map(p => {
                   return (
-                    <Col key={p.id}>
-                      <Projects>
-                        <h3>{p.name}</h3>
-                      </Projects>
-                    </Col>
+                    <Projects key={p.id} src="./profile.jpg"></Projects>
                   )
                 })}
+              </Col>
             </Row>
           </Container>
           <Button className="nav-button" onClick={() => this.props.scrollTo('contact')}>Contact</Button>

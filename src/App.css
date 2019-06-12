@@ -99,11 +99,12 @@ html {
 
 .about-container {
   margin-top: 2em;
-  margin-bottom: 2.5em;
+  margin-bottom: 2em;
 }
 
 .project {
-  justify-content: space-between;
+  align-items: center;
+  justify-content: center;
 }
 
 .copyright {
