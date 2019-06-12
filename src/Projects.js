@@ -11,7 +11,7 @@ import Modal from 'react-modal';
 const projects = [
   {
     name: 'Beer Crawl',
-    img: './project.jpg',
+    img: './beercrawl.jpg',
     description: "An app to help you explore your urban environment. After getting your location, a beer crawl is dynamically generated along with a link to the directions in your maps application.",
     technologies: 'JavaScript, Bootstrap 3, Google Maps API',
     url: 'https://mapmybeercrawl.firebaseapp.com/',
@@ -20,7 +20,7 @@ const projects = [
   },
   {
     name: 'Group Timer',
-    img: './project.jpg',
+    img: './grouptimer.jpg',
     description: 'Conquer your todo list with the help of sequential timers.',
     technologies: 'React, node.js, Express, MongoDB, Heroku, Firebase',
     url: 'https://group-timer.firebaseapp.com',
@@ -29,7 +29,7 @@ const projects = [
   },
   {
     name: 'Simple Todo',
-    img: './project.jpg',
+    img: './simpletodo.jpg',
     description: 'Stay orgainzed with this simple todo list.',
     technologies: 'React, node.js, Express, MongoDB, Heroku, Firebase',
     url: 'https://simple-todo-d5482.firebaseapp.com/',
@@ -95,6 +95,11 @@ class Projects extends Component {
     align-items: center;
     justify-content: center;
     margin: 10px;
+    position: relative;
+    text-align: center;
+    height: 180px;
+    width: 170px;
+    cursor: pointer;
     `
 
     return (
@@ -102,13 +107,15 @@ class Projects extends Component {
         <div className="App-projects">
           <Container>
             <Row>
-              <Col className="project">
+
                 {projects.map(p => {
                   return (
-                    <Projects onClick={() => this.openProject(p)} key={p.id} src={p.img}></Projects>
+                    <Col className="project">
+                      <h3>{p.name}</h3>
+                      <Projects onClick={() => this.openProject(p)} key={p.id} src={p.img}></Projects>
+                    </Col>
                   )
                 })}
-              </Col>
             </Row>
           </Container>
           <Button className="nav-button" onClick={() => this.props.scrollTo('contact')}>Contact</Button>
