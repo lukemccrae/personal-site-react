@@ -13,10 +13,6 @@ const Icon = styled.a`
 
 `
 
-const description = styled.div`
-
-`
-
 const ProjectModal = props => {
   console.log(props);
   return (

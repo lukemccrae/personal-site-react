@@ -126,6 +126,10 @@ html {
   justify-content: space-between;
 }
 
+#pdfobject {
+  height: 600px;
+}
+
 .icon-row a {
   padding: 0 12px 0 12px;
   font-size: 30px;

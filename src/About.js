@@ -5,15 +5,43 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Image from 'react-bootstrap/Image';
+import {PDFObject} from 'react-pdfobject';
+import Modal from 'react-modal';
+
+const customStyles = {
+  content: {
+    top: '50%',
+    left: '50%',
+    right: 'auto',
+    bottom: 'auto',
+    marginRight: '-50%',
+    transform: 'translate(-50%, -50%)',
+    width: '80%',
+    height: '100%',
+    position: 'absolute'
+  }
+};
+
 
 class About extends Component {
   constructor(props) {
     super(props)
 
     this.state = {
-      description: 'text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised i'
+      description: "Hi, I'm Luke. I'm passionate about building practical solutions through software. I have an affinity for map API's and outdoor challenges",
+      modalIsOpen: false
+
     }
+    this.openModal = this.openModal.bind(this);
   }
+
+  openModal = () => {
+    this.setState({ modalIsOpen: true });
+  };
+
+  onCloseModal = () => {
+    this.setState({ modalIsOpen: false });
+  };
 
   render() {
     return (
@@ -34,9 +62,21 @@ class About extends Component {
 
           <div>
             <Button className="nav-button" onClick={() => this.props.scrollTo('projects')}>Projects</Button>
-            <Button className="nav-button" onClick={() => this.props.openModal}>Resume</Button>
+            <Button className="nav-button" onClick={() => this.openModal()}>Resume</Button>
           </div>
         </div>
+        <Modal
+          isOpen={this.state.modalIsOpen}
+          onAfterOpen={this.afterOpenModal}
+          style={customStyles}
+          shouldCloseOnOverlayClick={true}
+          onRequestClose={this.onCloseModal}
+          ariaHideApp={false}
+          >
+          <PDFObject
+            url="./Resume.pdf"
+          />
+        </Modal>
       </div>
     )
   }

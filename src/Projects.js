@@ -13,7 +13,7 @@ const projects = [
     name: 'Beer Crawl',
     img: './project.jpg',
     description: "An app to help you explore your urban environment. After getting your location, a beer crawl is dynamically generated along with a link to the directions in your maps application.",
-    technologies: [],
+    technologies: 'JavaScript, Bootstrap 3, Google Maps API',
     url: 'https://mapmybeercrawl.firebaseapp.com/',
     github: 'https://github.com/lukemccrae/beercrawl',
     id: 1
@@ -22,7 +22,7 @@ const projects = [
     name: 'Group Timer',
     img: './project.jpg',
     description: 'Conquer your todo list with the help of sequential timers.',
-    technologies: [],
+    technologies: 'React, node.js, Express, MongoDB, Heroku, Firebase',
     url: 'https://group-timer.firebaseapp.com',
     github: 'https://github.com/lukemccrae/routine-timer',
     id: 2
@@ -31,7 +31,7 @@ const projects = [
     name: 'Simple Todo',
     img: './project.jpg',
     description: 'Stay orgainzed with this simple todo list.',
-    technologies: [],
+    technologies: 'React, node.js, Express, MongoDB, Heroku, Firebase',
     url: 'https://simple-todo-d5482.firebaseapp.com/',
     github: 'https://github.com/lukemccrae/todo-boilerplate',
     id: 3
@@ -117,7 +117,8 @@ class Projects extends Component {
           isOpen={this.state.modalIsOpen}
           onAfterOpen={this.afterOpenModal}
           style={customStyles}
-
+          shouldCloseOnOverlayClick={true}
+          onRequestClose={this.onCloseModal}
         >
         <ProjectModal onCloseModal={this.onCloseModal} project={this.state.selectedProject}></ProjectModal>
       </Modal>
