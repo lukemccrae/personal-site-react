@@ -11,6 +11,7 @@
     "react-particles-js": "^2.6.0",
     "react-pdfobject": "^1.1.1",
     "react-responsive": "^7.0.0",
+    "react-router-dom": "^5.0.1",
     "react-scripts": "3.0.1",
     "react-sticky": "^6.0.3",
     "styled-components": "^4.3.1"

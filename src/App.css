@@ -110,7 +110,14 @@ html {
 .copyright {
   width: 100%;
   font-size: 12.4px !important;
-  margin-top: 10%;
+  margin-top: 2em;
+  margin-bottom: 0;
+}
+
+.project-img:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+  transition: all 0.4s ease 0s;
 }
 
 .ReactModal__Body--open {
@@ -130,6 +137,16 @@ html {
   height: 600px;
 }
 
+.profile-image {
+  border-style: solid;
+  border-width: 2px;
+  border-color: black;
+}
+
+.links-wrapper {
+  margin-top: 3em;
+}
+
 .centered-text {
   position: absolute;
   top: 50%;
@@ -137,9 +154,21 @@ html {
   transform: translate(-50%, -50%);
 }
 
+.icon-link:hover {
+  color: white;
+}
+
 .icon-row a {
   padding: 0 12px 0 12px;
   font-size: 30px;
+  color: grey;
+  align-items: center;
+}
+
+.icon-row {
+  flex-wrap: nowrap;
+  margin-top: 1em;
+  justify-content: center;
 }
 
 .nav button {

@@ -28,7 +28,7 @@ class About extends Component {
     super(props)
 
     this.state = {
-      description: "Hi, I'm Luke. I'm passionate about building practical solutions through software. I have an affinity for map API's and outdoor challenges",
+      description: "Hi, I'm Luke. I'm passionate about building practical solutions through software. I have an affinity for map API's and outdoor challenges.",
       modalIsOpen: false
 
     }
@@ -50,7 +50,7 @@ class About extends Component {
           <Container>
             <Row className="about-container">
               <Col sm={4}>
-                <Image src="./profile.jpg" roundedCircle />
+                <Image className="profile-image" src="./profile.jpg" roundedCircle />
               </Col>
               <Col sm={8}>
                 <div className="about-me-description">

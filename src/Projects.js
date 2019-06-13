@@ -111,7 +111,7 @@ class Projects extends Component {
                   return (
                     <Col key={p.id} className="project">
                       <h3>{p.name}</h3>
-                      <Projects onClick={() => this.openProject(p)} src={p.img}></Projects>
+                      <Projects className="project-img" onClick={() => this.openProject(p)} src={p.img}></Projects>
                     </Col>
                   )
                 })}

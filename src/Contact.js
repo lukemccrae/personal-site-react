@@ -1,10 +1,30 @@
 import React, {Component} from 'react';
 import './App.css';
 import Form from 'react-bootstrap/Form';
+import {FaLinkedin} from 'react-icons/fa';
+import {FaMedium} from 'react-icons/fa';
+import {FaEnvelope} from 'react-icons/fa';
+import {GoMarkGithub} from 'react-icons/go';
+import styled from 'styled-components';
 import Button from 'react-bootstrap/Button';
 import Row from 'react-bootstrap/Row';
 import Container from 'react-bootstrap/Container';
 import Col from 'react-bootstrap/Col';
+
+const Icon = styled.a`
+
+`
+const links = [
+  {
+    url: 'nowhere'
+  },
+  {
+    url: 'nowhere'
+  },
+  {
+    url: 'nowhere'
+  }
+]
 
 class Contact extends Component {
   constructor(props) {
@@ -96,7 +116,15 @@ class Contact extends Component {
                   </Button>
                 </Form>
               </Col>
-              <Col sm={3}></Col>
+              <Col sm={2}></Col>
+            </Row>
+            <Row>
+              <Col className="icon-row">
+                <Icon className="icon-link" href={"https://www.linkedin.com/in/lukemccrae/"}><FaLinkedin></FaLinkedin></Icon>
+                <Icon className="icon-link" href={"https://github.com/lukemccrae"}><GoMarkGithub></GoMarkGithub></Icon>
+                <Icon className="icon-link" href={"https://medium.com/@lukemccrae"}><FaMedium></FaMedium></Icon>
+                <Icon className="icon-link" href={"mailto:luke.mccrae@gmail.com"}><FaEnvelope></FaEnvelope></Icon>
+              </Col>
             </Row>
           </Container>
           <p className="copyright">Luke McCrae ©2019</p>
