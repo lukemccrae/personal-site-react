@@ -81,7 +81,6 @@ html {
 
 .nav-button {
   background-color: transparent;
-  margin: 5px;
 }
 
 .nav {
@@ -102,10 +101,7 @@ html {
   margin-bottom: 2em;
 }
 
-.project {
-  align-items: center;
-  justify-content: center;
-}
+.project {}
 
 .copyright {
   width: 100%;

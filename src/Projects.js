@@ -97,27 +97,42 @@ class Projects extends Component {
     margin: 10px;
     position: relative;
     text-align: center;
-    height: 180px;
-    width: 170px;
+    height: 7em;
+    width: 7em;
     cursor: pointer;
+    `
+
+    const ProjectName = styled.div`
+    font-size: 1em;
+    `
+
+    const Heading = styled.div`
+    font-size: 2em;
+    `
+
+    const Description = styled.div`
+    font-size: 1.5em;
+    margin-bottom: 1.5em;
     `
 
     return (
       <div className="App">
         <div className="App-projects">
           <Container>
+            <Heading>Portfolio</Heading>
+            <Description>Select a project to learn more</Description>
             <Row>
                 {projects.map(p => {
                   return (
                     <Col key={p.id} className="project">
-                      <h3>{p.name}</h3>
+                      <ProjectName>{p.name}</ProjectName>
                       <Projects className="project-img" onClick={() => this.openProject(p)} src={p.img}></Projects>
                     </Col>
                   )
                 })}
             </Row>
+              <Button className="nav-button" onClick={() => this.props.scrollTo('contact')}>Contact</Button>
           </Container>
-          <Button className="nav-button" onClick={() => this.props.scrollTo('contact')}>Contact</Button>
         </div>
         <Modal
           isOpen={this.state.modalIsOpen}
