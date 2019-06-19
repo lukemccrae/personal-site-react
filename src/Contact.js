@@ -14,17 +14,6 @@ import Col from 'react-bootstrap/Col';
 const Icon = styled.a`
 
 `
-const links = [
-  {
-    url: 'nowhere'
-  },
-  {
-    url: 'nowhere'
-  },
-  {
-    url: 'nowhere'
-  }
-]
 
 class Contact extends Component {
   constructor(props) {
