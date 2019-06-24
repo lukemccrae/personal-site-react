@@ -1,6 +1,5 @@
 import React, {Component} from 'react';
 import './App.css';
-import Button from 'react-bootstrap/Button';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
@@ -28,7 +27,7 @@ class About extends Component {
     super(props)
 
     this.state = {
-      description: "Hi, I'm Luke. I'm passionate about building practical solutions through software. I have an affinity for map API's and outdoor challenges.",
+      description: "Hi, I'm Luke. I'm passionate about helping people improve their lives through software.",
       modalIsOpen: false
 
     }
@@ -61,8 +60,8 @@ class About extends Component {
           </Container>
 
           <div>
-            <Button className="nav-button" onClick={() => this.props.scrollTo('projects')}>Projects</Button>
-            <Button className="nav-button" onClick={() => this.openModal()}>Resume</Button>
+            <button className="nav-button" onClick={() => this.props.scrollTo('projects')}>Projects</button>
+            <button className="nav-button" onClick={() => this.openModal()}>Resume</button>
           </div>
         </div>
         <Modal

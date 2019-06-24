@@ -6,7 +6,6 @@ import {FaMedium} from 'react-icons/fa';
 import {FaEnvelope} from 'react-icons/fa';
 import {GoMarkGithub} from 'react-icons/go';
 import styled from 'styled-components';
-import Button from 'react-bootstrap/Button';
 import Row from 'react-bootstrap/Row';
 import Container from 'react-bootstrap/Container';
 import Col from 'react-bootstrap/Col';
@@ -100,9 +99,9 @@ class Contact extends Component {
                     <Form.Control value={this.state.message} onChange={this.onMessageChange} ref="message" id="message" type="text" placeholder="Message" as="textarea" rows="7"/>
                   </Form.Group>
 
-                  <Button className="nav-button" variant="primary" type="submit">
+                  <button className="nav-button" variant="primary" type="submit">
                     Submit
-                  </Button>
+                  </button>
                 </Form>
               </Col>
               <Col sm={2}></Col>

@@ -2,6 +2,10 @@
   text-align: center;
 }
 
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
 .App-logo {
   animation: App-logo-spin infinite 20s linear;
   height: 40vmin;
@@ -80,8 +84,23 @@ html {
 }
 
 .nav-button {
+  border-style: solid;
+  border-radius: 0;
+  color: #D3D3D3;
   background-color: transparent;
+  border-color: #D3D3D3;
   margin: 25px 10px 10px 10px;
+  font-size: 1.3rem;
+}
+
+.nav-button:focus {
+  outline: 0;
+}
+
+.nav-button:hover {
+  cursor: pointer;
+  background-color: #D3D3D3;
+  color: black;
 }
 
 .nav {
@@ -102,8 +121,6 @@ html {
   margin-bottom: 2em;
 }
 
-.project {}
-
 .copyright {
   width: 100%;
   font-size: 12.4px !important;
@@ -115,6 +132,10 @@ html {
   cursor: pointer;
   transform: scale(1.05);
   transition: all 0.4s ease 0s;
+}
+
+.close-project {
+  cursor: pointer;
 }
 
 .ReactModal__Body--open {
@@ -152,7 +173,7 @@ html {
 }
 
 .icon-link:hover {
-  color: white;
+  color: #D3D3D3;
 }
 
 .icon-row a {
@@ -163,6 +184,7 @@ html {
 }
 
 .icon-row {
+  display: inline;
   flex-wrap: nowrap;
   margin-top: 1em;
   justify-content: center;

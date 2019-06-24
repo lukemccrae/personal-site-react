@@ -1,7 +1,6 @@
 import React, {Component} from 'react';
 import './App.css';
 import ProjectModal from './ProjectModal.js';
-import Button from 'react-bootstrap/Button';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
@@ -131,7 +130,7 @@ class Projects extends Component {
                   )
                 })}
             </Row>
-              <Button className="nav-button" onClick={() => this.props.scrollTo('contact')}>Contact</Button>
+              <button className="nav-button" onClick={() => this.props.scrollTo('contact')}>Contact</button>
           </Container>
         </div>
         <Modal

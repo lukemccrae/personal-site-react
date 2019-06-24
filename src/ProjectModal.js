@@ -20,13 +20,13 @@ const ProjectModal = props => {
       <Container className="container">
         <Row className="project-name-row">
           <h3>{props.project.name}</h3>
-          <Close onClick={props.onCloseModal}><span>X</span></Close>
+          <Close className="close-project icon-link" onClick={props.onCloseModal}><span>X</span></Close>
         </Row>
         <p>Created using: {props.project.technologies}</p>
         <div>{props.project.description}</div>
         <Row className="icon-row">
-          <Icon href={props.project.url}><FiGlobe></FiGlobe></Icon>
-          <Icon href={props.project.github}><GoMarkGithub></GoMarkGithub></Icon>
+          <Icon className="icon-link" href={props.project.url}><FiGlobe></FiGlobe></Icon>
+          <Icon className="icon-link" href={props.project.github}><GoMarkGithub></GoMarkGithub></Icon>
         </Row>
       </Container>
 

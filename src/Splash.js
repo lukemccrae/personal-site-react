@@ -1,6 +1,5 @@
 import React, {Component} from 'react';
 import './App.css';
-import Button from 'react-bootstrap/Button';
 import Particles from 'react-particles-js';
 
 class Splash extends Component {
@@ -18,9 +17,9 @@ class Splash extends Component {
             <Particles></Particles>
           </div>
           <div className="name">
-            <h3>Luke McCrae</h3>
-            <h5>Full Stack Developer</h5>
-            <Button className="nav-button" onClick={() => this.props.scrollTo('about')}>Learn More</Button>
+            <h1>Luke McCrae</h1>
+            <h4>Full Stack Developer</h4>
+            <button className="nav-button" onClick={() => this.props.scrollTo('about')}>Learn More</button>
           </div>
         </div>
       </div>
