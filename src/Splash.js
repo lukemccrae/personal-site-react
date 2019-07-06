@@ -1,6 +1,18 @@
 import React, {Component} from 'react';
 import './App.css';
 import Particles from 'react-particles-js';
+import styled from 'styled-components';
+
+
+const Button = styled.button`
+  border-color: #FFFFFF;
+  color: #FFFFFF;
+  &:hover {
+    background-color: #FFFFFF;
+    color: #212529;
+    border-color: #FFFFFF;
+  }
+`
 
 class Splash extends Component {
   constructor(props) {
@@ -19,7 +31,7 @@ class Splash extends Component {
           <div className="name">
             <h1>Luke McCrae</h1>
             <h4>Full Stack Developer</h4>
-            <button className="nav-button" onClick={() => this.props.scrollTo('about')}>Learn More</button>
+            <Button className="nav-button" onClick={() => this.props.scrollTo('about')}>Learn More</Button>
           </div>
         </div>
       </div>

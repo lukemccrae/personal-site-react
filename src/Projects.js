@@ -7,6 +7,16 @@ import Col from 'react-bootstrap/Col';
 import styled from 'styled-components';
 import Modal from 'react-modal';
 
+const Button = styled.button`
+  border-color: #FFFFFF;
+  color: #FFFFFF;
+  &:hover {
+    background-color: #FFFFFF;
+    color: #212529;
+    border-color: #FFFFFF;
+  }
+`
+
 const projects = [
   {
     name: 'Beer Crawl',
@@ -130,7 +140,7 @@ class Projects extends Component {
                   )
                 })}
             </Row>
-              <button className="nav-button" onClick={() => this.props.scrollTo('contact')}>Contact</button>
+              <Button className="nav-button" onClick={() => this.props.scrollTo('contact')}>Contact</Button>
           </Container>
         </div>
         <Modal

@@ -6,14 +6,16 @@ body {
   font-family: 'Open Sans', sans-serif;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
-}
-
 html {
   scroll-behavior: smooth;
+}
+
+#particles canvas {
+  background-color: #212529;
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  z-index: -1;
 }
 
 .App-splash {
@@ -27,18 +29,18 @@ html {
 }
 
 .App-about {
-  background-color: #782f30;
+  background-color: #FFFFFF;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: #444649;
 }
 
 .App-projects {
-  background-color: #282f31;
+  background-color: #454140;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -49,7 +51,7 @@ html {
 }
 
 .App-contact {
-  background-color: #982c34;
+  background-color: #212529;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -60,14 +62,6 @@ html {
 
 .App-link {
   color: #61dafb;
-}
-
-#particles canvas {
-  background-color: #282c34;
-  position: relative;
-  width: 100%;
-  min-height: 100vh;
-  z-index: -1;
 }
 
 #particles {
@@ -86,9 +80,7 @@ html {
 .nav-button {
   border-style: solid;
   border-radius: 0;
-  color: #D3D3D3;
   background-color: transparent;
-  border-color: #D3D3D3;
   margin: 25px 10px 10px 10px;
   font-size: 1.3rem;
 }
@@ -99,8 +91,6 @@ html {
 
 .nav-button:hover {
   cursor: pointer;
-  background-color: #D3D3D3;
-  color: black;
 }
 
 .nav {
@@ -179,7 +169,7 @@ html {
 .icon-row a {
   padding: 0 12px 0 12px;
   font-size: 30px;
-  color: grey;
+  color: #969D96;
   align-items: center;
 }
 

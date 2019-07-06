@@ -14,6 +14,16 @@ const Icon = styled.a`
 
 `
 
+const Button = styled.button`
+  border-color: #FFFFFF;
+  color: #FFFFFF;
+  &:hover {
+    background-color: #FFFFFF;
+    color: #212529;
+    border-color: #FFFFFF;
+  }
+`
+
 class Contact extends Component {
   constructor(props) {
     super(props)
@@ -83,7 +93,8 @@ class Contact extends Component {
       <div className="App">
         <div className="App-contact">
           <Container>
-            <h3>Contact me</h3>
+            <h1>Contact</h1>
+            <h3>Want to work together?</h3>
             <Row className="contact-form">
               <Col sm={3}></Col>
               <Col sm={6}>
@@ -99,9 +110,9 @@ class Contact extends Component {
                     <Form.Control value={this.state.message} onChange={this.onMessageChange} ref="message" id="message" type="text" placeholder="Message" as="textarea" rows="7"/>
                   </Form.Group>
 
-                  <button className="nav-button" variant="primary" type="submit">
+                  <Button className="nav-button" variant="primary" type="submit">
                     Submit
-                  </button>
+                  </Button>
                 </Form>
               </Col>
               <Col sm={2}></Col>

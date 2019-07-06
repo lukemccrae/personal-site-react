@@ -6,6 +6,19 @@ import Col from 'react-bootstrap/Col';
 import Image from 'react-bootstrap/Image';
 import {PDFObject} from 'react-pdfobject';
 import Modal from 'react-modal';
+import styled from 'styled-components';
+
+const Button = styled.button`
+  border-color: #212529;
+  color: #212529;
+  &:hover {
+    background-color: #212529;
+    color: #FFFFFF;
+    border-color: #212529;
+  }
+`
+
+
 
 const customStyles = {
   content: {
@@ -27,7 +40,7 @@ class About extends Component {
     super(props)
 
     this.state = {
-      description: "Hi, I'm Luke. I'm passionate about helping people improve their lives through software.",
+      description: "Hi. I'm Luke, a software developer in Oakland, CA. I love putting things together and diving into complex problems. I strive to reinvent myself every day.",
       modalIsOpen: false
 
     }
@@ -60,8 +73,8 @@ class About extends Component {
           </Container>
 
           <div>
-            <button className="nav-button" onClick={() => this.props.scrollTo('projects')}>Projects</button>
-            <button className="nav-button" onClick={() => this.openModal()}>Resume</button>
+            <Button className="nav-button" onClick={() => this.props.scrollTo('projects')}>Projects</Button>
+            <Button className="nav-button" onClick={() => this.openModal()}>Resume</Button>
           </div>
         </div>
         <Modal
