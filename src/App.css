@@ -187,3 +187,7 @@ html {
 #basic-nav-dropdown {
   color: white;
 }
+
+.ReactModal__Overlay, .ReactModal__Overlay--after-open {
+  background-color: rgba(128, 128, 128, 0.75) !important;
+}

@@ -13,10 +13,10 @@ const Icon = styled.a`
 
 `
 
+
 const ProjectModal = props => {
-  console.log(props);
   return (
-    <div className="project-modal">
+    <div>
       <Container className="container">
         <Row className="project-name-row">
           <h3>{props.project.name}</h3>
@@ -24,10 +24,12 @@ const ProjectModal = props => {
         </Row>
         <p>Created using: {props.project.technologies}</p>
         <div>{props.project.description}</div>
-        <Row className="icon-row">
-          <Icon className="icon-link" href={props.project.url}><FiGlobe></FiGlobe></Icon>
-          <Icon className="icon-link" href={props.project.github}><GoMarkGithub></GoMarkGithub></Icon>
-        </Row>
+        <div className="icon-row">
+          <Row>
+            <Icon className="icon-link" href={props.project.url}><FiGlobe></FiGlobe></Icon>
+            <Icon className="icon-link" href={props.project.github}><GoMarkGithub></GoMarkGithub></Icon>
+          </Row>
+        </div>
       </Container>
 
     </div>

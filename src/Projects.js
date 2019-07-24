@@ -55,7 +55,7 @@ const customStyles = {
     bottom: 'auto',
     marginRight: '-50%',
     transform: 'translate(-50%, -50%)',
-    width: '70%',
+    width: '30%',
     position: 'absolute'
   }
 };
@@ -96,9 +96,8 @@ class Projects extends Component {
 
   render() {
     const Projects = styled.img`
-    border-width: 2px;
+    border-width: 3px;
     border-style: solid;
-    border-radius: 5px;
     border-color: grey;
     min-height: 65px;
     align-items: center;
@@ -120,7 +119,7 @@ class Projects extends Component {
     `
 
     const Description = styled.div`
-    font-size: 1.5em;
+    font-size: 1.2em;
     margin-bottom: 1.5em;
     `
 
