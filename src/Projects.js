@@ -44,6 +44,15 @@ const projects = [
     url: 'https://simple-todo-d5482.firebaseapp.com/',
     github: 'https://github.com/lukemccrae/todo-boilerplate',
     id: 3
+  },
+  {
+    name: 'Personal Site',
+    img: './portfolio.jpg',
+    description: 'My personal fullstack portfolio.',
+    technologies: 'React, Bootstrap, Heroku, Firebase',
+    url: 'https://lukemccrae-97878.firebaseapp.com',
+    github: 'https://github.com/lukemccrae/todo-boilerplate',
+    id: 4
   }
 ]
 
@@ -148,6 +157,7 @@ class Projects extends Component {
           style={customStyles}
           shouldCloseOnOverlayClick={true}
           onRequestClose={this.onCloseModal}
+          ariaHideApp={false}
         >
         <ProjectModal onCloseModal={this.onCloseModal} project={this.state.selectedProject}></ProjectModal>
       </Modal>
