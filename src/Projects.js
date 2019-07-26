@@ -30,7 +30,7 @@ const projects = [
   {
     name: 'Group Timer',
     img: './grouptimer.jpg',
-    description: 'Conquer your todo list with the help of sequential timers.',
+    description: 'I created Group Timer to streamline my daily routines. The idea came after I found success practicing Hal Elrod’s Six Minute Miracle Morning. I often find that the key to having a productive day is establishing microroutines for the essentials of daily life. I hope this tool can help you establish a deeper connection to what gives you success.',
     technologies: 'React, node.js, Express, MongoDB, Heroku, Firebase',
     url: 'https://group-timer.firebaseapp.com',
     github: 'https://github.com/lukemccrae/routine-timer',
