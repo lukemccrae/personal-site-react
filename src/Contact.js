@@ -57,11 +57,12 @@ class Contact extends Component {
     e.preventDefault()
 
     e.preventDefault();
-    fetch(`https://email-sender-45678.herokuapp.com/send`, {
+    fetch(`https://6kqoehq7fj.execute-api.us-west-2.amazonaws.com/default/emailSender`, {
       method: 'POST',
-      headers: {
-        'Content-Type': 'application/json'
-      },
+      headers : {
+        'Content-Type' : 'application/x-www-form-urlencoded; charset=UTF-8'
+        
+    },
       body: JSON.stringify({
         name: this.state.name,
         email: this.state.email,
