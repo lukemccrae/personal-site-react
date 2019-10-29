@@ -10,6 +10,7 @@ import Row from 'react-bootstrap/Row';
 import Container from 'react-bootstrap/Container';
 import Col from 'react-bootstrap/Col';
 
+
 const Icon = styled.a`
 
 `
@@ -54,9 +55,14 @@ class Contact extends Component {
   }
 
   handleSubmit(e) {
-    e.preventDefault()
-
     e.preventDefault();
+
+    this.setState({
+      name: '',
+      email: '',
+      message: 'Thanks for reaching out, have a great day :)'
+    })
+    
     fetch(`https://6kqoehq7fj.execute-api.us-west-2.amazonaws.com/default/emailSender`, {
       method: 'POST',
       headers : {
@@ -71,22 +77,7 @@ class Contact extends Component {
     })
     .then(res => res.json())
     .then(json => {
-      console.log(json);
-      if(json.success) {
-        this.setState({
-          name: '',
-          email: '',
-          message: 'Thanks for reaching out! Have a great day :)'
-        })
-      } else {
-        this.setState({
-          name: '',
-          emai: '',
-          message: `Well this is embarrasing, something is broken :( Shoot me an email at lukemccrae@gmail.com and I will get back to you!`
-        })
-      }
     });
-
   }
 
   render() {
