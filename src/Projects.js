@@ -30,26 +30,26 @@ const projects = [
   {
     name: 'Group Timer',
     img: './grouptimer.jpg',
-    description: 'I created Group Timer to streamline my daily routines. The idea came after I found success practicing Hal Elrod’s Six Minute Miracle Morning. I often find that the key to having a productive day is establishing microroutines for the essentials of daily life. I hope this tool can help you establish a deeper connection to what gives you success.',
+    description: "A tool to streamline routines and increase productivity. Create, edit, and deploy groups of timers.",
     technologies: 'React, node.js, Express, MongoDB, Heroku, Firebase',
     url: 'https://group-timer.firebaseapp.com',
     github: 'https://github.com/lukemccrae/routine-timer',
     id: 2
   },
-  {
-    name: 'Simple Todo',
-    img: './simpletodo.jpg',
-    description: 'Stay orgainzed with this simple todo list.',
-    technologies: 'React, node.js, Express, MongoDB, Heroku, Firebase',
-    url: 'https://simple-todo-d5482.firebaseapp.com/',
-    github: 'https://github.com/lukemccrae/todo-boilerplate',
-    id: 3
-  },
+  // {
+  //   name: 'Simple Todo',
+  //   img: './simpletodo.jpg',
+  //   description: 'Stay orgainzed with this simple todo list.',
+  //   technologies: 'React, node.js, Express, MongoDB, Heroku, Firebase',
+  //   url: 'https://simple-todo-d5482.firebaseapp.com/',
+  //   github: 'https://github.com/lukemccrae/todo-boilerplate',
+  //   id: 3
+  // },
   {
     name: 'Personal Site',
     img: './portfolio.jpg',
-    description: 'My personal fullstack portfolio.',
-    technologies: 'React, Bootstrap, Heroku, Firebase',
+    description: 'My personal fullstack portfolio. Created using React and Bootstrap, with AWS Lambda for the contact form.',
+    technologies: 'React, Bootstrap, Firebase, AWS Lambda',
     url: 'https://lukemccrae-97878.firebaseapp.com',
     github: 'https://github.com/lukemccrae/todo-boilerplate',
     id: 4
@@ -64,7 +64,7 @@ const customStyles = {
     bottom: 'auto',
     marginRight: '-50%',
     transform: 'translate(-50%, -50%)',
-    width: '30%',
+    width: '90%',
     position: 'absolute'
   }
 };
