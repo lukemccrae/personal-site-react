@@ -86,7 +86,7 @@ class About extends Component {
           ariaHideApp={false}
           >
           <PDFObject
-            url="./Resume.pdf"
+            url="./LukeMcCraeDev2020.pdf"
           />
         </Modal>
       </div>

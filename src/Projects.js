@@ -123,10 +123,6 @@ class Projects extends Component {
     font-size: 1em;
     `
 
-    const Heading = styled.div`
-    font-size: 2em;
-    `
-
     const Description = styled.div`
     font-size: 1.2em;
     margin-bottom: 1.5em;
@@ -136,7 +132,6 @@ class Projects extends Component {
       <div className="App">
         <div className="App-projects">
           <Container>
-            <Heading>Portfolio</Heading>
             <Description>Select a project to learn more</Description>
             <Row>
                 {projects.map(p => {
