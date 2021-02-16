@@ -19,12 +19,12 @@ const Button = styled.button`
 
 const projects = [
   {
-    name: 'Beer Crawl',
+    name: 'Track Snip',
     img: './beercrawl.jpg',
-    description: "An app to help you explore your urban environment. After getting your location, a beer crawl is dynamically generated along with a link to the directions in your maps application.",
-    technologies: 'JavaScript, Bootstrap 3, Google Maps API',
-    url: 'https://mapmybeercrawl.firebaseapp.com/',
-    github: 'https://github.com/lukemccrae/beercrawl',
+    description: "Have you ever forgot to stop your GPS on a workout before getting in the car? I certainly have, so I created this tool to edit GPX files.",
+    technologies: 'JavaScript, node.js, OpenStreetMaps',
+    url: 'https://tracksnip.firebaseapp.com/',
+    github: 'https://github.com/lukemccrae/tracksnip',
     id: 1
   },
   {
