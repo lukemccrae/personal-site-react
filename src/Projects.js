@@ -20,7 +20,7 @@ const Button = styled.button`
 const projects = [
   {
     name: 'Track Snip',
-    img: './beercrawl.jpg',
+    img: './tracksnip.jpg',
     description: "Have you ever forgot to stop your GPS on a workout before getting in the car? I certainly have, so I created this tool to edit GPX files.",
     technologies: 'JavaScript, node.js, OpenStreetMaps',
     url: 'https://tracksnip.firebaseapp.com/',
