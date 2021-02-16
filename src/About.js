@@ -40,7 +40,7 @@ class About extends Component {
     super(props)
 
     this.state = {
-      description: "Hi. I'm Luke, a software developer in Denver, CA. I love putting things together and diving into complex problems. I strive to reinvent myself every day.",
+      description: "Hi. I'm Luke, a software developer in Denver, CO. I love putting things together and diving into complex problems. I strive to reinvent myself every day.",
       modalIsOpen: false
 
     }
