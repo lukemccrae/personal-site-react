@@ -85,7 +85,6 @@ class Contact extends Component {
       <div className="App">
         <div className="App-contact">
           <Container>
-            <h1>Contact</h1>
             <h3>Want to work together?</h3>
             <Row className="contact-form">
               <Col sm={3}></Col>
@@ -118,7 +117,7 @@ class Contact extends Component {
               </Col>
             </Row>
           </Container>
-          <p className="copyright">Luke McCrae ©2019</p>
+          <p className="copyright">Luke McCrae ©2021</p>
         </div>
       </div>
     )

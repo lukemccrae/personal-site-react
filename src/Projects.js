@@ -21,7 +21,7 @@ const projects = [
   {
     name: 'Track Snip',
     img: './tracksnip.jpg',
-    description: "Have you ever forgot to stop your GPS on a workout before getting in the car? I certainly have, so I created this tool to edit GPX files.",
+    description: "Have you ever forgot to stop your GPS on a workout before getting in the car? I certainly have. Use this tool to remove excess points from the end of GPX/KML files.",
     technologies: 'JavaScript, node.js, OpenStreetMaps',
     url: 'https://tracksnip.firebaseapp.com/',
     github: 'https://github.com/lukemccrae/tracksnip',
